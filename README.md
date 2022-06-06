@@ -1,7 +1,7 @@
 # Malody Calculator
 - Calculate the accuracy of each part in dan
 - Calculate the dan accuracy by providing accuracy of each part
-- Entering your own object of each part is allowed
+- Entering your own object data of each part is allowed
 
 # Original included object data
 - Malody 4K Regular Dan v3
