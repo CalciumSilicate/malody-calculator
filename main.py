@@ -67,7 +67,7 @@ dan_list = {
 mode = make_choice(['计算单曲ACC', '通过单曲ACC估计段位ACC'])[1]
 cho = make_choice(list(dan_list.keys()))
 dan = cho[0]
-if not dan:
+if dan == 'Custom':
     N_a = int(input('请输入第1首的物量>>>'))
     N_b = int(input('请输入第2首的物量>>>'))
     N_c = int(input('请输入第3首的物量>>>'))
@@ -87,7 +87,7 @@ if mode:
     if cho[1] >= 3:
         print('Jack: {}%，结束时{}%\nTech: {}%，结束时{}%\nSpeed: {}%，结束时{}%\nStream: {}%，结束时{}%\nTotal: {}%'.format(
             round(A_a, 2), round(A_A, 2), round(A_b, 2), round(A_B, 2), round(A_c, 2), round(A_C, 2), round(A_d, 2),
-            round(A_D, 2), A_D))
+            round(A_D, 2), A_D).replace('Jack', 'Jack' if dan != 'Custom' else '1').replace('Tech', 'Tech' if dan != 'Custom' else '2').replace('Speed', 'Speed' if dan != 'Custom' else '3').replace('Stream', 'Stream' if dan != 'Custom' else '4'))
     else:
         print('1: {}%\n2: {}%\n3: {}%\n4: {}%\nTotal: {}%'.format(A_a, A_b, A_c, A_d, A_D))
 
