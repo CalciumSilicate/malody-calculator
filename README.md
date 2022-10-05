@@ -15,3 +15,7 @@
 # 自带的段位物量数据
 - Malody 4K Regular Dan v3
 - Malody 4K Extra Dan v3
+
+# Calcium-Bot
+
+##
