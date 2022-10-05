@@ -18,4 +18,6 @@
 
 # Calcium-Bot
 
-##
+## B站信息推送 (Haruka-Bot)
+
+输入 `!帮助` 获取帮助信息
